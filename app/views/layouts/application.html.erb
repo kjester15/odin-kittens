@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <div class="nav-bar">
+      <%= button_to "Home", kittens_path, method: :get %>
+      <%= button_to "New Kitten", new_kitten_path, method: :get %>
+      <%# <%= button_to "Edit Kitten", edit_kitten_path(params[:id]), method: :get %>
+    </div>
     <%= yield %>
   </body>
 </html>
