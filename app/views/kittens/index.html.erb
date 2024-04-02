@@ -7,6 +7,7 @@
     <%= "Cuteness: " %>
     <%= kitten.cuteness %><br>
     <%= "Softness: " %>
-    <%= kitten.softness %><br><br>
+    <%= kitten.softness %><br>
+    <%= button_to "Edit Kitten", edit_kitten_path(kitten.id), method: :get %><br><br>
   <% end %>
 </div>
